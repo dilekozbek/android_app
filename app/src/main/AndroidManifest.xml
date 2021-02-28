@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.burakerol.android.finalprojesi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/dibu"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/dibu"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".login">
+        </activity>
+
+        <activity android:name=".personel">
+        </activity>
+
+        <activity android:name=".opmain">
+        </activity>
+        <activity android:name=".personelguncelle">
+        </activity>
+        <activity android:name=".opkategori">
+        </activity>
+        <activity android:name=".urun">
+        </activity>
+        <activity android:name=".katguncelle">
+        </activity>
+        <activity android:name=".urunguncelle">
+        </activity>
+
+    </application>
+
+</manifest>

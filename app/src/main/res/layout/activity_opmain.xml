@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    >
+
+    <ImageButton
+        android:id="@+id/personelbtn"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="33dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:cropToPadding="false"
+        android:elevation="15dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/personel" />
+
+    <ImageButton
+        android:id="@+id/masabtn"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignStart="@+id/personelbtn"
+        android:layout_below="@+id/personelbtn"
+        android:layout_marginTop="89dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:cropToPadding="false"
+        android:elevation="15dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/masa" />
+
+    <ImageButton
+        android:id="@+id/katbtn"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/personelbtn"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:cropToPadding="false"
+        android:elevation="15dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/kategori" />
+
+    <ImageButton
+        android:id="@+id/urunbtn"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignStart="@+id/katbtn"
+        android:layout_alignTop="@+id/masabtn"
+        android:backgroundTint="@color/colorPrimary"
+        android:cropToPadding="false"
+        android:elevation="15dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/urun" />
+
+</RelativeLayout>

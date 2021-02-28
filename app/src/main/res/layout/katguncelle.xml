@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    >
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonguncelle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:text="Kategori Adı :"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/katad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="98dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonguncelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/katad"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="79dp"
+        android:layout_toEndOf="@+id/textView8"
+        android:text="Güncelle" />
+</RelativeLayout>

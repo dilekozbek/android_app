@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    >
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dp"
+        android:background="@color/colorPrimary"
+        android:text="Personel Adı"
+        android:textAlignment="center"
+        android:textColor="@color/intro"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView11"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:background="@color/intro"
+        android:ems="10"
+        android:hint="Ad giriniz"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="39dp"
+        android:background="@color/colorPrimary"
+        android:text="Personel Soyadı"
+        android:textAlignment="center"
+        android:textColor="@color/intro"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtsoyad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_alignEnd="@+id/txtad"
+        android:background="@color/intro"
+        android:ems="10"
+        android:hint="Soyad giriniz."
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:text="Kullanıcı Adı"
+        android:textAlignment="center"
+        android:textColor="@color/intro"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtkul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignStart="@+id/txtsoyad"
+        android:background="@color/intro"
+        android:ems="10"
+        android:hint="Personel kullanıcı adını girin"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Şifre"
+        android:textAlignment="center"
+        android:textColor="@color/intro"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtsifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/txtkul"
+        android:background="@color/intro"
+        android:ems="10"
+        android:hint="Şifreyi giriniz"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorPrimary"
+        android:text="Telefon"
+        android:textAlignment="center"
+        android:textColor="@color/intro"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txttel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView15"
+        android:layout_alignStart="@+id/txtsifre"
+        android:background="@color/intro"
+        android:ems="10"
+        android:hint="Personel Telefonu"
+        android:inputType="phone"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView14"
+        android:layout_marginTop="23dp"
+        android:background="@color/colorPrimary"
+        android:text="Mail"
+        android:textAlignment="center"
+        android:textColor="@color/intro"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_alignStart="@+id/txttel"
+        android:background="@color/intro"
+        android:ems="10"
+        android:hint="Mail adresini giriniz."
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btnkayit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtmail"
+        android:layout_below="@+id/txtmail"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Kayıt"
+        android:textColor="@android:color/background_light"
+        />
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_below="@+id/btnkayit"
+        android:background="@android:color/background_light"
+        android:cacheColorHint="@color/colorPrimary"
+        android:scrollbars="horizontal|vertical" />
+
+</RelativeLayout>

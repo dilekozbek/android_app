@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.burakerol.android.finalprojesi.login"
+    android:background="@drawable/bg2"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="115dp"
+        android:background="@color/colorPrimary"
+        android:text="Kullanıcı Adı"
+        android:textAlignment="center"
+        android:textColor="@color/intro"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/txt_sifre"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:text="Şifre"
+        android:textAlignment="center"
+        android:textColor="@color/intro"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_giris"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_kulad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        android:background="@color/colorPrimary"
+        android:text="Giriş"
+        android:textColor="@color/intro" />
+
+    <EditText
+        android:id="@+id/txt_kulad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/txt_sifre"
+        android:background="@color/intro"
+        android:ems="10"
+        android:hint="Şifrenizi Giriniz"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/txt_sifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:background="@color/intro"
+        android:ems="10"
+        android:hint="Kullanıcı Adınızı Giriniz."
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>
